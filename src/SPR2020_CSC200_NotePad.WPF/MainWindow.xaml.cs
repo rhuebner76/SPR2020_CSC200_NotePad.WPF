@@ -14,14 +14,10 @@ namespace SPR2020_CSC200_NotePad.WPF
         private const string FilterSoap = "SOAP file (*.soap)|*.soap";
         private const string FilterBinary = "Binary file (*.bin)|*.bin";
         private const string FilterAny = "Any files (*.*)|*.*";
-
-        private Models.Document Document { get; }
-
+        
         public MainWindow()
         {
             InitializeComponent();
-            this.Document = new Models.Document(string.Empty);
-            this.UserText.Text = Document.Content;
         }
 
         private void OnMainFileOpenMenuClicked(object sender, RoutedEventArgs e)
